@@ -6,7 +6,6 @@
 #define IN 1
 #define OUT 0
 
-
 void Addbook();
 void Searchbook();
 void Displaybook();
@@ -19,7 +18,6 @@ void Addmembr();
 void Exit();
 
 char info[500];
-
 
 struct
 {
@@ -40,7 +38,6 @@ struct
 
 }membr;
 
-
 //initializing the files used in the program
 
 FILE *librecord;
@@ -57,7 +54,6 @@ int main()
     do{
     printf("\n\t--MENU--\n \n 1. Add A New Book\n 2. Search a book \n 3. Display Complete Information\n 4. Display All Books of An Author\n 5. List Titles of a Book\n 6. List Count of Books (Issued & On Stock)\n 7. To Issue a Book \n 8. To Return a Book \n 9. Add A New Member\n 10.Exit the program\n\n\t Enter your choice <1-10>: ");
     scanf("%i",&choice);
-
 
     switch (choice)
     {
@@ -536,7 +532,6 @@ int mid,i,Found1=0,Found2=0,flag=0;char retbookname[20];
         }
         else if(!Found1)
             printf("! Invalid User id...\n");
-
     }
 
 }
